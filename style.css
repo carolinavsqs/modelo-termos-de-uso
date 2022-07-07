@@ -1,0 +1,215 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h2 *, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+::selection {
+    background: #EE9665;
+    color: #fff;
+}
+
+strong {
+    color: #EE6593;
+}
+
+.nav-item a {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+main a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+  
+a:hover, .nav-item a:hover {
+    color: #EE9665;
+    text-decoration: underline;
+    transition: all 0.2s linear;
+}
+
+a:focus {
+    color: #EE9665;
+    text-decoration: underline;
+    outline: 2px solid rgba(241, 169, 129, 1);
+}
+
+.nav-item a.active {
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+a.skip-content {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-content:focus, a.skip-content:active {
+    width: 100%;
+    color: #fff;
+    background-color: #EE6593;
+    text-align: center;
+    text-decoration: underline;
+    left: auto;
+    top: auto;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+    z-index: 999;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus, button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(241, 169, 129, 1) !important;
+    outline: 2px solid rgba(241, 169, 129, 1);
+}
+
+button.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border-width: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: .5rem 1.5rem;
+}
+
+button.btn-primary:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    transition: all 0.2s linear;
+}
+
+button.btn-primary:focus {
+    color: #fff;
+    background-color: #252525;
+    border-color: #252525;
+}
+
+i.gradient-icon {
+    background:-moz-linear-gradient(left, #EE6593 0%, #EE9665 100%); 
+    background: -webkit-linear-gradient(left, #EE6593 0%,#EE9665 100%); 
+    background: linear-gradient(to right, #EE6593 0%,#EE9665 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+}
+
+i.solid-icon {
+    color: #EE6593;
+}
+
+nav button i {
+    font-size: 1.2rem;
+}
+
+.header-info {
+    width: 60%;
+}
+
+.header-info .accordion {
+    width: 100%;
+}
+
+.header-img {
+    width: 40%;
+}
+
+.header-img img {
+    width: 70%; 
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z' clip-rule='evenodd'/></svg>");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z' clip-rule='evenodd'/></svg>");
+    --bs-accordion-border-width: 0px;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(241, 169, 129, 1);
+    --bs-accordion-active-color: #000;
+    --bs-accordion-active-bg: #fff;
+}
+
+.accordion-button {
+    font-size: 1.2rem;
+}
+
+.accordion-body {
+    text-align: justify;
+}
+
+.about-title {
+    text-align: center;
+    width: 50%;
+}
+
+.line {
+    display: inline-block;
+    background-image: url("img/line.svg");
+    background-position: 0 100%;
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.about-info {
+    text-align: center;
+    width: 90%;
+}
+
+.about-img img {
+    width: 80%;
+}
+
+.info-grid-item i {
+    font-size: 3rem;
+}
+
+.info-grid-item {
+    text-align: center;
+}
+
+.info-grid-item-title {
+    width: 80%;
+}
+
+.info-grid-item-text {
+    width: 95%;
+}
+
+@media (max-width: 991.98px) { 
+    .header-info {
+        width: 100%;
+    }
+    
+    .header-img {
+       width: 100%;
+    }
+
+    .header-img img {
+        width: 50%; 
+    }
+
+    .about-title {
+        width: 100%;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+}
