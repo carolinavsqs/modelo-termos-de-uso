@@ -46,7 +46,7 @@
       </div>
     </nav>
     <main id="main-content" tabindex="-1">
-      <header class="container d-flex flex-row justify-content-between flex-wrap my-4">
+      <header class="container d-flex flex-row justify-content-between flex-wrap-reverse my-5">
           <div class="header-info d-flex justify-content-start align-items-center py-4">
             <div class="accordion accordion-flush" id="accordionFlush">
               <div class="accordion-item">
@@ -93,37 +93,69 @@
           </div>
           <div class="header-img d-flex justify-content-center align-items-center py-4"><img src="img/header.svg" alt="" role="presentation"/></div>
       </header>
-      <div class="container d-flex flex-column align-items-center my-5">
-        <h1 class="about-title py-3">Sobre a Lei Geral de <span class="line">Proteção</span> de Dados Pessoais (LGPD)</h1>
-        <p class="about-info py-4">A Lei Geral de Proteção de Dados Pessoais (<strong>Lei nº 13.709/2018</strong>) começou a valer em 18 de setembro de 2020 e determina como os seus dados pessoais podem ser utilizados por empresas e provedores de serviços. Confira abaixo um <strong>resumo de seus principais direitos</strong> garantidos pela LGPD. Para mais informações, consulte a legislação na íntegra.</p>
-        <div class="about-img d-flex justify-content-center py-3"><img src="img/content.svg" alt="" role="presentation"/></div>
-      </div>
-      <div class="container py-4">
-        <div class="row info-grid">
-          <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
-            <i class="bi bi-clipboard-data gradient-icon"></i>
-            <h5 class="info-grid-item-title py-2">Informação sobre a coleta de dados</h5>
-            <p class="info-grid-item-text">Além da informação sobre a existência da coleta de dados, você tem direito a ter acesso aos dados coletados.</p>
-          </div>
-          <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
-            <i class="bi bi-pencil-square gradient-icon"></i>
-            <h5 class="info-grid-item-title py-2">Solicitar correção dos dados</h5>
-            <p class="info-grid-item-text">Você tem direito a solicitar a correção de dados pessoais que estejam incompletos, inexatos ou desatualizados.</p>
-          </div>
-          <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
-            <i class="bi bi-trash3 gradient-icon"></i>
-            <h5 class="info-grid-item-title py-2">Solicitar eliminação de dados</h5>
-            <p class="info-grid-item-text">Você pode solicitar a eliminação, bloqueio ou anonimização de dados desnecessários, excessivos ou contrários à LGPD.</p>
-          </div>
-          <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
-            <i class="bi bi-x-octagon gradient-icon"></i>
-            <h5 class="info-grid-item-title py-2">Revogar o consentimento</h5>
-            <p class="info-grid-item-text">Você pode solicitar a eliminação, bloqueio ou anonimização de dados desnecessários, excessivos ou contrários à LGPD.</p>
+      <section class="my-5">
+        <div class="container about d-flex flex-column align-items-center">
+          <h2 class="about-title py-4">Sobre a Lei Geral de <span class="line">Proteção</span><br> de Dados Pessoais (LGPD)</h2>
+          <p class="about-text py-2">A Lei Geral de Proteção de Dados Pessoais (<strong>Lei nº 13.709/2018</strong>) começou a valer em 18 de setembro de 2020 e determina como os seus dados pessoais podem ser utilizados por empresas e provedores de serviços. Confira abaixo um <strong>resumo de seus principais direitos</strong> garantidos pela LGPD. Para mais informações, consulte a legislação na íntegra.</p>
+          <div class="about-img d-flex justify-content-center py-5"><img src="img/content.svg" alt="" role="presentation"/></div>
+        </div>
+        <div class="container pt-5 pb-4">
+          <div class="row info-grid">
+            <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
+              <i class="bi bi-clipboard-data gradient-icon"></i>
+              <h5 class="info-grid-item-title py-2">Informação sobre a coleta de dados</h5>
+              <p class="info-grid-item-text">Além da informação sobre a existência da coleta de dados, você tem direito a ter acesso aos dados coletados.</p>
+            </div>
+            <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
+              <i class="bi bi-pencil-square gradient-icon"></i>
+              <h5 class="info-grid-item-title py-2">Solicitar correção dos dados</h5>
+              <p class="info-grid-item-text">Você tem direito a solicitar a correção de dados pessoais que estejam incompletos, inexatos ou desatualizados.</p>
+            </div>
+            <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
+              <i class="bi bi-trash3 gradient-icon"></i>
+              <h5 class="info-grid-item-title py-2">Solicitar eliminação de dados</h5>
+              <p class="info-grid-item-text">Você pode solicitar a eliminação, bloqueio ou anonimização de dados desnecessários, excessivos ou contrários à LGPD.</p>
+            </div>
+            <div class="col-md-3 info-grid-item d-flex flex-column align-items-center py-4">
+              <i class="bi bi-x-octagon gradient-icon"></i>
+              <h5 class="info-grid-item-title py-2">Revogar o consentimento</h5>
+              <p class="info-grid-item-text">Você pode cancelar a permissão para o uso de seus dados pessoais e solicitar exclusão (exceto em casos específicos).</p>
+            </div>
           </div>
         </div>
-      
-      </div>
+      </section>
+      <section class="container links-grid py-4">
+        <h3 class="mb-5">Veja também</h3>
+        <div class="row">
+          <div class="col-md-4 py-4">
+              <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='/terms.html';" onkeypress="location.href='terms.html';">
+                <img src="img/terms.svg" alt="" role="presentation" class="py-3"/>
+                <h5 class="links-grid-item-title py-2">Termos de Uso</h5>
+                <p class="links-grid-item-text">Clique para ver as regras para utilização do nosso site/serviço, além dos direitos e deveres tanto do usuário quanto do provedor.</p>
+              </button>
+          </div>
+          <div class="col-md-4 py-4">
+            <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='/privacy.html';" onkeypress="location.href='privacy.html';">
+              <img src="img/privacy.svg" alt="" role="presentation" class="py-3"/>
+              <h5 class="links-grid-item-title py-2">Políticas de Privacidade</h5>
+              <p class="links-grid-item-text">Clique para acessar a versão completa do documento que exibe detalhadamente como é feito o tratamento dos seus dados.</p>
+            </button>
+          </div>
+          <div class="col-md-4 py-4">
+            <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='/settings.html';" onkeypress="location.href='settings.html';">
+              <img src="img/settings.svg" alt="" role="presentation" class="py-3"/>
+              <h5 class="links-grid-item-title py-2">Alterar ou remover meus dados pessoais</h5>
+              <p class="links-grid-item-text">Clique para solicitar a revisão de dados incorretos ou incompletos, ou revogar o consentimento sobre o uso dos seus dados.</p>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="mt-5">
+      <div class="container py-5">
+        <span class="footer-text">Modelo open source para exibição de termos de uso e políticas de privacidade em conformidade com a LGPD. Ilustrações por <a href="https://undraw.co/">@undraw</a>, <a href="https://www.manypixels.co/">@manypixels</a> e <a href="https://www.highlights.design/">@highlights</a></span>
+      </div>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -21,19 +21,13 @@ strong {
     text-decoration: none;
 }
 
-main a {
-    color: #000;
-    font-weight: 600;
-    text-decoration: underline;
-}
-  
-a:hover, .nav-item a:hover {
+.nav-item a:hover {
     color: #EE9665;
     text-decoration: underline;
     transition: all 0.2s linear;
 }
 
-a:focus {
+.nav-item a:focus {
     color: #EE9665;
     text-decoration: underline;
     outline: 2px solid rgba(241, 169, 129, 1);
@@ -43,6 +37,37 @@ a:focus {
     color: #000;
     font-weight: 600;
     text-decoration: underline;
+}
+
+main a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #EE9665;
+    transition: all 0.2s linear;
+}
+
+main a:focus {
+    color: #EE9665;
+    outline: 2px solid rgba(241, 169, 129, 1);
+}
+
+footer a {
+    color: #EE9665;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #EE6593;
+    transition: all 0.2s linear;
+}
+
+footer a:focus {
+    color: #EE6593;
+    outline: 2px solid rgba(238,101,147, 0.8);
 }
 
 a.skip-content {
@@ -98,9 +123,10 @@ button.btn-primary:hover {
 }
 
 button.btn-primary:focus {
-    color: #fff;
-    background-color: #252525;
-    border-color: #252525;
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    transition: all 0.2s linear;
 }
 
 i.gradient-icon {
@@ -154,9 +180,8 @@ nav button i {
     text-align: justify;
 }
 
-.about-title {
+.about {
     text-align: center;
-    width: 50%;
 }
 
 .line {
@@ -167,9 +192,8 @@ nav button i {
     background-repeat: no-repeat;
 }
 
-.about-info {
-    text-align: center;
-    width: 90%;
+.about-text {
+    width: 80%;
 }
 
 .about-img img {
@@ -192,6 +216,37 @@ nav button i {
     width: 95%;
 }
 
+.links-grid {
+    text-align: center;
+}
+
+.links-grid-item {
+    background-color: #FCFCFC;
+    border: 1px solid #EAEAEA;
+    border-radius: 15px;
+}
+
+.links-grid-item:hover, .links-grid-item:focus {
+    background-color: #ee95650a;
+    border: 1px solid #EE9565;
+    transition: all 0.2s linear;
+}
+
+.links-grid-item-title {
+    width: 80%;
+}
+
+.links-grid-item-text {
+    width: 95%;
+}
+
+footer {
+    background-color: #212232;
+    color: #EAEAEA;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 @media (max-width: 991.98px) { 
     .header-info {
         width: 100%;
@@ -211,5 +266,11 @@ nav button i {
 
     .about-info {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .links-grid-item {
+        min-height: 430px;
     }
 }
