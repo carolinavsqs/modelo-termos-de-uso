@@ -1,5 +1,36 @@
+:root {
+    --body-bg: #FFFFFF;
+    --body-bg-two: #FCFCFC;
+    --body-bg-three: #EAEAEA;
+    --button-bg: #212232;
+    --footer-bg: #28293D;
+    --body-color: #212232;
+    --body-color-two: #FCFCFC;
+    --body-color-three: #EAEAEA;
+    --button-color: #FFFFFF;
+    --footer-color: #EAEAEA;
+    --svg-filter: invert(10%) sepia(29%) saturate(794%) hue-rotate(197deg) brightness(91%) contrast(90%);
+    /* Altere as cores do bloco abaixo para combinar com a identidade visual do seu site */
+    --primary-accent: #EE6593;
+    --secondary-accent: #EE9665;
+    --secondary-accent-light: #ee95650a;
+    --main-outline: rgba(241, 169, 129, 1);
+    --side-outline: rgba(238,101,147, 0.8);
+    /* ------- */
+}
+
+.dark-mode:root {
+    --body-bg: #212232;
+    --body-bg-two: #28293D;
+    --body-bg-three: #393A57;
+    --body-color: #FFFFFF;
+    --svg-filter: invert(99%) sepia(6%) saturate(1%) hue-rotate(3deg) brightness(105%) contrast(100%);
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--body-bg);
+    color: var(--body-color);
 }
 
 h1, h2, h2 *, h3, h4, h5, h6 {
@@ -7,67 +38,67 @@ h1, h2, h2 *, h3, h4, h5, h6 {
 }
 
 ::selection {
-    background: #EE9665;
-    color: #fff;
+    background: var(--secondary-accent);
+    color: var(--body-bg);
 }
 
 strong {
-    color: #EE6593;
+    color: var(--primary-accent);
 }
 
 .nav-item a {
-    color: #000;
+    color: var(--body-color);
     font-weight: 400;
     text-decoration: none;
 }
 
 .nav-item a:hover {
-    color: #EE9665;
+    color: var(--secondary-accent);
     text-decoration: underline;
     transition: all 0.2s linear;
 }
 
 .nav-item a:focus {
-    color: #EE9665;
+    color: var(--secondary-accent);
     text-decoration: underline;
-    outline: 2px solid rgba(241, 169, 129, 1);
+    outline: 2px solid var(--main-outline);
 }
 
 .nav-item a.active {
-    color: #000;
+    color: var(--body-color) !important;
     font-weight: 600;
     text-decoration: underline;
 }
 
 main a {
-    color: #000;
+    color: var(--body-color);
     font-weight: 600;
     text-decoration: underline;
 }
 
 main a:hover {
-    color: #EE9665;
+    color: var(--secondary-accent);
     transition: all 0.2s linear;
 }
 
 main a:focus {
-    color: #EE9665;
-    outline: 2px solid rgba(241, 169, 129, 1);
+    color: var(--secondary-accent);
+    outline: 2px solid var(--main-outline);
 }
 
 footer a {
-    color: #EE9665;
+    color: var(--secondary-accent);
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #EE6593;
+    color: var(--primary-accent);
     transition: all 0.2s linear;
 }
 
 footer a:focus {
-    color: #EE6593;
-    outline: 2px solid rgba(238,101,147, 0.8);
+    color: var(--primary-accent);
+    outline: 2px solid var(--side-outline);
 }
 
 a.skip-content {
@@ -82,8 +113,8 @@ a.skip-content {
 
 a.skip-content:focus, a.skip-content:active {
     width: 100%;
-    color: #fff;
-    background-color: #EE6593;
+    color: var(--body-color-two);
+    background-color: var(--primary-accent);
     text-align: center;
     text-decoration: underline;
     left: auto;
@@ -94,19 +125,31 @@ a.skip-content:focus, a.skip-content:active {
     z-index: 999;
 }
 
+.offcanvas {
+    background-color: var(--body-bg);
+}
+
 .navbar-toggler {
     border: none;
 }
 
+.navbar-toggler-icon, .accordion-button::after {
+    filter: var(--svg-filter);
+}
+
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus, button:focus {
-    box-shadow: 0 0 0 0.25rem rgba(241, 169, 129, 1) !important;
-    outline: 2px solid rgba(241, 169, 129, 1);
+    box-shadow: 0 0 0 0.25rem var(--main-outline) !important;
+    outline: 2px solid var(--main-outline);
+}
+
+.navbar-brand {
+    color: var(--body-color);
 }
 
 button.btn-primary {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
+    color: var(--button-color);
+    background-color: var(--button-bg);
+    border-color: var(--body-color);
     border-width: 2px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -115,24 +158,17 @@ button.btn-primary {
     padding: .5rem 1.5rem;
 }
 
-button.btn-primary:hover {
-    color: #000;
-    background-color: #fff;
-    border-color: #000;
-    transition: all 0.2s linear;
-}
-
-button.btn-primary:focus {
-    color: #000;
-    background-color: #fff;
-    border-color: #000;
+button.btn-primary:hover, button.btn-primary:focus {
+    color: var(--button-bg);
+    background-color: var(--button-color);
+    border-color: var(--button-bg);
     transition: all 0.2s linear;
 }
 
 i.gradient-icon {
-    background:-moz-linear-gradient(left, #EE6593 0%, #EE9665 100%); 
-    background: -webkit-linear-gradient(left, #EE6593 0%,#EE9665 100%); 
-    background: linear-gradient(to right, #EE6593 0%,#EE9665 100%);
+    background:-moz-linear-gradient(left, var(--primary-accent) 0%, var(--secondary-accent) 100%); 
+    background: -webkit-linear-gradient(left, var(--primary-accent) 0%, var(--secondary-accent) 100%); 
+    background: linear-gradient(to right, var(--primary-accent) 0%, var(--secondary-accent) 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -140,7 +176,7 @@ i.gradient-icon {
 }
 
 i.solid-icon {
-    color: #EE6593;
+    color: var(--primary-accent);
 }
 
 nav button i {
@@ -164,12 +200,16 @@ nav button i {
 }
 
 .accordion {
+    --bs-accordion-color: var(--body-color);
+    --bs-accordion-bg: var(--body-bg);
+    --bs-accordion-active-color: var(--body-color);
+    --bs-accordion-active-bg: var(--body-bg);
+    --bs-accordion-btn-color: var(--body-color);
     --bs-accordion-btn-icon: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z' clip-rule='evenodd'/></svg>");
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z' clip-rule='evenodd'/></svg>");
     --bs-accordion-border-width: 0px;
-    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(241, 169, 129, 1);
-    --bs-accordion-active-color: #000;
-    --bs-accordion-active-bg: #fff;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--main-outline);
+    --bs-accordion-transition: 0;
 }
 
 .accordion-button {
@@ -221,14 +261,15 @@ nav button i {
 }
 
 .links-grid-item {
-    background-color: #FCFCFC;
-    border: 1px solid #EAEAEA;
+    background-color: var(--body-bg-two);
+    color: var(--body-color);
+    border: 1px solid var(--body-bg-three);
     border-radius: 15px;
 }
 
 .links-grid-item:hover, .links-grid-item:focus {
-    background-color: #ee95650a;
-    border: 1px solid #EE9565;
+    background-color: var(--secondary-accent-light);
+    border: 1px solid var(--secondary-accent);
     transition: all 0.2s linear;
 }
 
@@ -241,8 +282,8 @@ nav button i {
 }
 
 footer {
-    background-color: #212232;
-    color: #EAEAEA;
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
     font-size: 0.9rem;
     text-align: center;
 }
