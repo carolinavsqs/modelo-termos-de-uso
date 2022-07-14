@@ -1,0 +1,37 @@
+.toolbar {
+    background-color: var(--body-bg-two);
+    border-top: 1px solid var(--body-bg-three);
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.control-buttons i {
+    font-size: 1.5rem;
+}
+
+.control-buttons button {
+    background-color: transparent;
+    border: none;
+}
+
+.control-buttons i:hover {
+    background:-moz-linear-gradient(left, var(--body-color) 0%, var(--body-color) 100%); 
+    background: -webkit-linear-gradient(left, var(--body-color) 0%, var(--body-color) 100%); 
+    background: linear-gradient(to right, var(--body-color) 0%, var(--body-color) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+   transition: all 0.5 linear;
+}
+
+.control-buttons button:focus {
+    outline: none;
+}
+
+.control-buttons button:focus-visible {
+    outline: 2px solid var(--main-outline);
+}

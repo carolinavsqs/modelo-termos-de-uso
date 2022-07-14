@@ -7,7 +7,8 @@
     <title>Como utilizamos seus dados | Modelo para exibição de Termos de Uso e Políticas de Privacidade</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
     <nav class="navbar navbar-expand-xl py-4">
       <div class="container d-flex justify-content-between">
         <!-- Adicione seu logotipo -->
-        <a class="navbar-brand" href="/index.html">Logo</a>
+        <a class="navbar-brand" href="index.html">Logo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,16 +29,16 @@
           <div class="offcanvas-body">  
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item d-flex align-items-center">
-                <a class="nav-link active" aria-current="page" href="/index.html">Como utilizamos seus dados</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Como utilizamos seus dados</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <a class="nav-link" href="/termos.html">Termos de uso</a>
+                <a class="nav-link" href="terms.html">Termos de uso</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <a class="nav-link" href="/politicas.html">Políticas de privacidade</a>
+                <a class="nav-link" href="privacy.html">Políticas de privacidade</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <a class="nav-link" href="/preferencias.html">Preferências de privacidade e cookies</a>
+                <a class="nav-link" href="settings.html">Preferências de privacidade e cookies</a>
               </li>
             </ul>
             <button type="button" class="btn btn-primary d-flex align-items-center" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="themeSwitch()" onkeypress="themeSwitch()">Alterar tema <i class="bi bi-brightness-high gradient-icon ps-2"></i></button>
@@ -128,21 +129,21 @@
         <h3 class="mb-5">Veja também</h3>
         <div class="row">
           <div class="col-md-4 py-4">
-              <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='/terms.html';" onkeypress="location.href='terms.html';">
+              <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='terms.html';" onkeypress="location.href='terms.html';">
                 <img src="img/terms.svg" alt="" role="presentation" class="py-3"/>
                 <h5 class="links-grid-item-title py-2">Termos de Uso</h5>
-                <p class="links-grid-item-text">Clique para ver as regras para utilização do nosso site/serviço, além dos direitos e deveres tanto do usuário quanto do provedor.</p>
+                <p class="links-grid-item-text">Clique para ler os termos de uso na íntegra, contendo as regras para utilização do nosso site/serviço e os direitos e deveres dos usuários e da organização.</p>
               </button>
           </div>
           <div class="col-md-4 py-4">
-            <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='/privacy.html';" onkeypress="location.href='privacy.html';">
+            <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='privacy.html';" onkeypress="location.href='privacy.html';">
               <img src="img/privacy.svg" alt="" role="presentation" class="py-3"/>
               <h5 class="links-grid-item-title py-2">Políticas de Privacidade</h5>
               <p class="links-grid-item-text">Clique para acessar a versão completa do documento que exibe detalhadamente como é feito o tratamento dos seus dados.</p>
             </button>
           </div>
           <div class="col-md-4 py-4">
-            <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='/settings.html';" onkeypress="location.href='settings.html';">
+            <button class="links-grid-item d-flex flex-column justify-content-center align-items-center py-3 px-3" type="button" onclick="location.href='settings.html';" onkeypress="location.href='settings.html';">
               <img src="img/settings.svg" alt="" role="presentation" class="py-3"/>
               <h5 class="links-grid-item-title py-2">Alterar ou remover meus dados pessoais</h5>
               <p class="links-grid-item-text">Clique para solicitar a revisão de dados incorretos ou incompletos, ou revogar o consentimento sobre o uso dos seus dados.</p>
@@ -157,6 +158,6 @@
       </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
