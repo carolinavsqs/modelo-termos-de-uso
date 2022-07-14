@@ -162,6 +162,10 @@ a.skip-content:focus, a.skip-content:active {
     background-color: var(--body-bg);
 }
 
+.navbar {
+    font-size: 1rem;
+}
+
 .navbar-toggler {
     border: none;
 }
@@ -182,6 +186,10 @@ a.skip-content:focus, a.skip-content:active {
 
 .navbar-brand {
     color: var(--body-color);
+}
+
+.navbar-brand img {
+    max-width: 120px;
 }
 
 button.btn-primary {

@@ -51,6 +51,7 @@
 
 .about-img img {
     width: 80%;
+    max-width: 600px;
 }
 
 .info-grid-item i {
@@ -92,6 +93,10 @@
 
 .links-grid-item-text {
     width: 95%;
+}
+
+.links-grid-item img {
+    max-height: 160px; 
 }
 
 @media (max-width: 991.98px) { 
